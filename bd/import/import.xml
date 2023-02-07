@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <root>
+       <table>
+	<name>Hight-speed</name>
+	<img_train>1.jpg</img_train>
+	<train_composition>1M, Dining car</train_composition>
+	<number_of_train_cars>10</number_of_train_cars>
+	<flight_id>1</flight_id>
+       </table>
+
+        <table>
+	<name>Hight-speed</name>
+	<img_train>2.jpg</img_train>
+	<train_composition>2A, Dining car</train_composition>
+	<number_of_train_cars>8</number_of_train_cars>
+	<flight_id>3</flight_id>
+        </table>
+
+        <table>
+	<name>Hight-speed</name>
+	<img_train>3.jpg</img_train>
+	<train_composition>2Y, Dining car</train_composition>
+	<number_of_train_cars>6</number_of_train_cars>
+	<flight_id>2</flight_id>
+        </table>
+    </root>

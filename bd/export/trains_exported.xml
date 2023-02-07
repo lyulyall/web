@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.1.1
+- https://www.phpmyadmin.net
+-
+- Хост: 127.0.0.1
+- Время создания: Дек 12 2022 г., 08:46
+- Версия сервера: 10.4.21-MariaDB
+- Версия PHP: 8.0.10
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="trains" collation="utf8_general_ci" charset="utf8">
+            <pma:table name="flight_of_train">
+                CREATE TABLE `flight_of_train` (
+                  `id` int(11) NOT NULL,
+                  `Unique_number` varchar(4) NOT NULL,
+                  `Departure_point` varchar(20) NOT NULL,
+                  `Arrival_point` varchar(20) NOT NULL,
+                  PRIMARY KEY (`id`) USING BTREE,
+                  UNIQUE KEY `Unique_number` (`Unique_number`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="trains">
+                CREATE TABLE `trains` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `Name` varchar(40) NOT NULL,
+                  `Img_train` varchar(25) NOT NULL DEFAULT 'img.jpg',
+                  `Train_composition` varchar(25) NOT NULL,
+                  `Number_of_train_cars` int(10) NOT NULL,
+                  `Flight_id` int(11) NOT NULL,
+                  PRIMARY KEY (`id`),
+                  KEY `foreign_key_1` (`Flight_id`),
+                  CONSTRAINT `foreign_key_1` FOREIGN KEY (`Flight_id`) REFERENCES `flight_of_train` (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+            </pma:table>
+            <pma:table name="users">
+                CREATE TABLE `users` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `login` varchar(30) NOT NULL,
+                  `password` varchar(255) NOT NULL,
+                  `name` varchar(30) NOT NULL,
+                  `surname` varchar(30) NOT NULL,
+                  `patronymic` varchar(30) NOT NULL,
+                  `vk` varchar(50) NOT NULL,
+                  `blood_group` int(11) NOT NULL,
+                  `rh_factor` varchar(1) NOT NULL,
+                  PRIMARY KEY (`id`) USING BTREE
+                ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - База данных: 'trains'
+    -->
+    <database name="trains">
+        <!-- Таблица flight_of_train -->
+        <table name="flight_of_train">
+            <column name="id">1</column>
+            <column name="Unique_number">123A</column>
+            <column name="Departure_point">London</column>
+            <column name="Arrival_point">Birmingham</column>
+        </table>
+        <table name="flight_of_train">
+            <column name="id">2</column>
+            <column name="Unique_number">123B</column>
+            <column name="Departure_point">London</column>
+            <column name="Arrival_point">Liverpool</column>
+        </table>
+        <table name="flight_of_train">
+            <column name="id">3</column>
+            <column name="Unique_number">123C</column>
+            <column name="Departure_point">London</column>
+            <column name="Arrival_point">Manchester</column>
+        </table>
+        <table name="flight_of_train">
+            <column name="id">4</column>
+            <column name="Unique_number">123D</column>
+            <column name="Departure_point">London</column>
+            <column name="Arrival_point">Leeds</column>
+        </table>
+        <table name="flight_of_train">
+            <column name="id">5</column>
+            <column name="Unique_number">123E</column>
+            <column name="Departure_point">London</column>
+            <column name="Arrival_point">Cambridge</column>
+        </table>
+        <!-- Таблица trains -->
+        <table name="trains">
+            <column name="id">1</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">1.jpg</column>
+            <column name="Train_composition">1M, Dining car</column>
+            <column name="Number_of_train_cars">6</column>
+            <column name="Flight_id">1</column>
+        </table>
+        <table name="trains">
+            <column name="id">2</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">2.jpg</column>
+            <column name="Train_composition">2C</column>
+            <column name="Number_of_train_cars">4</column>
+            <column name="Flight_id">2</column>
+        </table>
+        <table name="trains">
+            <column name="id">3</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">3.jpg</column>
+            <column name="Train_composition">2Y, Dining car</column>
+            <column name="Number_of_train_cars">7</column>
+            <column name="Flight_id">3</column>
+        </table>
+        <table name="trains">
+            <column name="id">4</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">4.jpg</column>
+            <column name="Train_composition">2A, Dining car</column>
+            <column name="Number_of_train_cars">10</column>
+            <column name="Flight_id">4</column>
+        </table>
+        <table name="trains">
+            <column name="id">5</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">3.jpg</column>
+            <column name="Train_composition">2Y, Dining car</column>
+            <column name="Number_of_train_cars">12</column>
+            <column name="Flight_id">5</column>
+        </table>
+        <table name="trains">
+            <column name="id">6</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">2.jpg</column>
+            <column name="Train_composition">2C, Dining car</column>
+            <column name="Number_of_train_cars">10</column>
+            <column name="Flight_id">1</column>
+        </table>
+        <table name="trains">
+            <column name="id">7</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">1.jpg</column>
+            <column name="Train_composition">1M, Dining car</column>
+            <column name="Number_of_train_cars">12</column>
+            <column name="Flight_id">2</column>
+        </table>
+        <table name="trains">
+            <column name="id">8</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">2.jpg</column>
+            <column name="Train_composition">2C, Dining car</column>
+            <column name="Number_of_train_cars">15</column>
+            <column name="Flight_id">3</column>
+        </table>
+        <table name="trains">
+            <column name="id">9</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">3.jpg</column>
+            <column name="Train_composition">2Y, Dining car</column>
+            <column name="Number_of_train_cars">10</column>
+            <column name="Flight_id">4</column>
+        </table>
+        <table name="trains">
+            <column name="id">10</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">3.jpg</column>
+            <column name="Train_composition">2Y, Dining car</column>
+            <column name="Number_of_train_cars">15</column>
+            <column name="Flight_id">5</column>
+        </table>
+        <table name="trains">
+            <column name="id">11</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">3.jpg</column>
+            <column name="Train_composition">2Y, Dining car</column>
+            <column name="Number_of_train_cars">12</column>
+            <column name="Flight_id">1</column>
+        </table>
+        <table name="trains">
+            <column name="id">12</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">1.jpg</column>
+            <column name="Train_composition">1M, Dining car</column>
+            <column name="Number_of_train_cars">10</column>
+            <column name="Flight_id">2</column>
+        </table>
+        <table name="trains">
+            <column name="id">13</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">3.jpg</column>
+            <column name="Train_composition">2Y, Dining car</column>
+            <column name="Number_of_train_cars">10</column>
+            <column name="Flight_id">3</column>
+        </table>
+        <table name="trains">
+            <column name="id">14</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">2.jpg</column>
+            <column name="Train_composition">2Y, Dining car</column>
+            <column name="Number_of_train_cars">15</column>
+            <column name="Flight_id">4</column>
+        </table>
+        <table name="trains">
+            <column name="id">15</column>
+            <column name="Name">Branded train</column>
+            <column name="Img_train">5.jpg</column>
+            <column name="Train_composition">1A, Dining car, mini bar</column>
+            <column name="Number_of_train_cars">10</column>
+            <column name="Flight_id">5</column>
+        </table>
+        <table name="trains">
+            <column name="id">16</column>
+            <column name="Name">Branded train</column>
+            <column name="Img_train">5.jpg</column>
+            <column name="Train_composition">1A, Dining car, mini bar</column>
+            <column name="Number_of_train_cars">10</column>
+            <column name="Flight_id">1</column>
+        </table>
+        <table name="trains">
+            <column name="id">17</column>
+            <column name="Name">Branded train</column>
+            <column name="Img_train">5.jpg</column>
+            <column name="Train_composition">1A, Dining car, mini bar</column>
+            <column name="Number_of_train_cars">8</column>
+            <column name="Flight_id">2</column>
+        </table>
+        <table name="trains">
+            <column name="id">18</column>
+            <column name="Name">Branded train</column>
+            <column name="Img_train">5.jpg</column>
+            <column name="Train_composition">1A, Dining car, mini bar</column>
+            <column name="Number_of_train_cars">11</column>
+            <column name="Flight_id">3</column>
+        </table>
+        <table name="trains">
+            <column name="id">19</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">4.jpg</column>
+            <column name="Train_composition">2A, Dining car</column>
+            <column name="Number_of_train_cars">15</column>
+            <column name="Flight_id">4</column>
+        </table>
+        <table name="trains">
+            <column name="id">20</column>
+            <column name="Name">Hight-speed</column>
+            <column name="Img_train">4.jpg</column>
+            <column name="Train_composition">2A, Dining car</column>
+            <column name="Number_of_train_cars">15</column>
+            <column name="Flight_id">5</column>
+        </table>
+        <!-- Таблица users -->
+        <table name="users">
+            <column name="id">9</column>
+            <column name="login">guzenko_yu@mail.ru</column>
+            <column name="password">$2y$10$6tmvVEf8Pp5W9mjVofwumue0rRXfO7gTFUBbSUpa5rzeS9HG7gRiu</column>
+            <column name="name">Yulia</column>
+            <column name="surname">Guzenko</column>
+            <column name="patronymic">Vyacheslavovna</column>
+            <column name="vk">https://vk.com/lyulyall</column>
+            <column name="blood_group">1</column>
+            <column name="rh_factor">+</column>
+        </table>
+    </database>
+</pma_xml_export>

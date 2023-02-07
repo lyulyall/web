@@ -1,0 +1,293 @@
+header{
+    background-color: #1a0b40;
+    font-family: Georgia, serif;
+    outline: 1px solid rgb(88, 89, 133); 
+
+}
+
+
+.logo{
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  width: 40%;
+}
+
+ .linkhead {
+   color: rgb(160, 160, 185);!important;
+   padding-top: 2%;!important;
+   text-decoration: none;!important;
+   Text-align: center;!important;
+ }
+ .linkhead:hover{
+    text-decoration-line: underline;
+    color: rgb(139, 139, 161);
+ }
+
+  .rowtrain {
+    background-color: #1a0b40;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+ .rowtrain:hover{
+      text-decoration-line: underline;
+     color: white;
+  }
+ 
+  .darkblue{
+    background-color: #1a0b40;
+  }
+
+  .blue{
+    background-color: #d5fcfe;
+  }
+
+  .green{
+    color: #3e888b;
+  }
+
+ .black-text{
+     color: black;
+ }
+
+
+  .texth1{
+    padding-top: 2%;
+    color: #1a0b40;
+    font-size: 320%;
+    font-weight: 700;
+    line-height: 90%;
+  }
+  .texth2{
+    padding-bottom: 3%;
+  }
+
+
+  .hidenblock{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    z-index: 2;
+    background-color: white;
+  }
+  .list{
+    list-style-type: none;
+    color: #3e888b;
+  }
+  .listlinespacing{
+    padding-top: 10px;
+  }
+  .map{
+    width: 80%;
+  }
+
+  .info {
+    font-size: 95%;
+    color: rgb(95, 95, 113);
+    padding-top: 2%;
+
+  }
+  .infolinespacing{
+    padding-top: 5px;
+    padding-left: 13%;
+    padding-right: 14%;
+
+  }
+
+  .dropdownbutton{
+    text-decoration: none;
+    width: 30%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #81d3d7;
+    border-radius: 3px;
+    color: black;
+    background-color: white;
+    padding: 10px;    
+    margin-left: 13%;
+  }
+  .title{
+    color:rgb(95, 95, 113);
+  }
+  .down{
+    color: #4da2a7;
+  }
+  .dropdownbutton:hover{
+    color: black; 
+  }
+
+  .htable{
+    padding-top: 7%;
+    padding-bottom: 7%;
+    font-family: URW Chancery L, cursive;
+    font-size: 150%;
+    text-align: center;  
+    color:rgb(95, 95, 113);
+  }
+  .headertable{
+    text-align: center;  
+    color: white;
+  }
+  .eltable{
+    text-align: center;  
+
+  }
+  .containertable{
+    padding-left: 18%;
+    padding-right: 20%;
+      padding-top: 2%;
+  }
+
+
+
+
+
+  .emptyfield{
+    background-color: white;
+    color: white;
+  }
+  .eGateLogo{
+    width: 8%;
+    padding-top: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hr-line{    
+    margin-top: 20px;
+    background-color: #1fa1a8;
+    width:70px;
+    border:none!important;
+    height:5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .headeraccordion{
+    padding-top: 7%;
+    font-family: URW Chancery L, cursive;
+    font-size: 200%;
+    font-weight: lighter;
+    text-align: center;  
+    color:rgb(95, 95, 113);
+  }
+  .infoaccordion{
+    padding-top: 1%;
+    color: rgb(95, 95, 113);
+    width: 45%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .accordion{
+    border-radius: 6px;
+    box-shadow: 0 0 5px;
+    width: 70%;
+    display: block;
+    margin: 5%;
+    margin-left: auto;
+    margin-right: auto;   
+    padding-top: 3%;
+  }
+  .el{
+    background-color: #e3fafb;
+    color: rgb(95, 95, 113)!important;
+  }
+  .btn{
+    width: 100%!important;
+    text-align: left!important;
+    border: none!important;
+
+  }
+
+  
+  footer{
+    padding: 3%;
+    background-color: #303434;
+    color: white;
+  }
+  .listfooter{
+    list-style-type: none;
+    color: white;
+  }
+  .elementlistfooter{
+    padding-top: 6px;
+  }
+  .elementlistfooter:hover{
+    color: #3e888b;
+    text-decoration-line: underline;
+  }
+  .iconfooter{
+    margin-bottom: 2%;
+  }
+  .linefooter{    
+    background-color: rgb(160, 160, 185);
+    border:none!important;
+    height:2px;
+    display: block;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .containerfooter{ 
+    margin-left: 7%;
+    margin-right: 8%;
+  }
+  .rowsocial{
+    padding-top: 5%;
+  }
+  .social:hover, iconhaeder{
+    color: #767677;
+  }
+  .buttonsignup{
+    background-color: #48bac0;
+    color: white;
+    border-radius: 4px;
+    padding: 1.5%;
+    float: right;
+  }
+  .buttonsignup:hover{
+    background-color: #37a1a7;
+  }
+
+.close {
+    color: black;
+    float: right;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+
+}
+
+.close:hover {
+    color: darkgray;
+    cursor: pointer;
+}
+
+.dark_background:before {
+    content: '';
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 4;
+}
+
+.login{
+    background-color: white;
+    padding: 20px 60px 40px 60px;
+    position: fixed;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
